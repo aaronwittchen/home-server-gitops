@@ -26,3 +26,13 @@ spec:
             port: 4533
             targetPort: 4533
             nodePort: 30533
+    
+    persistence:
+      music:
+        enabled: true
+        type: hostPath
+        hostPath: "C:\\Users\\ahorn\\Music"
+        mountPath: /music
+    
+    env:
+      ND_MUSICFOLDER: "/music"

@@ -42,6 +42,7 @@ Copy the token, paste it when the terminal asks
 21. Goal: Actually streaming music
 
 **Phase 6: Remote Access**
+https://tailscale.com/download
 22. Install Tailscale on laptop
 23. Install Tailscale on phone/main PC
 24. Access music server remotely via Tailscale IP

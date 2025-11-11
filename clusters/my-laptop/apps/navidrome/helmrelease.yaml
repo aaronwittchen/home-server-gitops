@@ -8,6 +8,7 @@ spec:
   chart:
     spec:
       chart: navidrome
+      version: "6.7.6"
       sourceRef:
         kind: HelmRepository
         name: navidrome-repo
@@ -15,7 +16,7 @@ spec:
   values:
     image:
       repository: deluan/navidrome
-      tag: latest
+      tag: "0.58.5"
     service:
       type: NodePort
       port: 4533

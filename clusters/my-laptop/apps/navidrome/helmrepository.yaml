@@ -5,4 +5,4 @@ metadata:
   namespace: default
 spec:
   interval: 10m
-  url: https://deluan.github.io/navidrome/charts
+  url: https://djjudas21.github.io/helm-charts

@@ -12,8 +12,9 @@
 
 **Phase 3: Install Flux on Laptop**
 9. Install Flux CLI with `choco install flux` or `winget install flux`
-10. Verify Flux is installed: `flux version`
-11. Bootstrap Flux to your Git repo
+10. flux install --components=source-controller,kustomize-controller,helm-controller,notification-controller
+11. Verify Flux is installed: `flux version`
+12. Bootstrap Flux to your Git repo
 flux bootstrap github \
   --owner=<your-github-username> \
   --repository=music-server-gitops \
@@ -23,8 +24,8 @@ flux bootstrap github \
 Go to github.com > Settings > Developer settings > Personal access tokens > Tokens (classic) > Generate new token
 Give it permissions: repo and workflow
 Copy the token, paste it when the terminal asks
-12. Verify Flux is running: `flux get all` and `kubectl get pods`
-13. Goal: Flux is watching your Git repo
+1.  Verify Flux is running: `flux get all` and `kubectl get pods`
+2.  Goal: Flux is watching your Git repo
 
 **Phase 4: Deploy Navidrome**
 1.  Install Helm CLI on laptop with `winget install Helm.Helm`

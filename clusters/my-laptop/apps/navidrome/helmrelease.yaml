@@ -26,7 +26,3 @@ spec:
             port: 4533
             targetPort: 4533
             nodePort: 30533
-    
-    env:
-      ND_LOGLEVEL: "info"
-      ND_MUSICFOLDER: "C:\\Users\\ahorn\\Music"

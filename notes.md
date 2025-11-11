@@ -46,4 +46,17 @@ https://tailscale.com/download
 22. Install Tailscale on laptop
 23. Install Tailscale on phone/main PC
 24. Access music server remotely via Tailscale IP
+http://localhost:30533
+Username: admin
+Password: admin
+Access from Main PC via Tailscale
+http://100.67.166.18:30533
+Replace with your old laptop's actual Tailscale IP from tailscale status
+Use Docker Volume Instead (Simpler)
+We need to tell Docker Desktop to share the Windows folder first.
+
+Open Docker Desktop
+Go to Settings > Resources > File Sharing
+Add C:\Users\ahorn\Music to the shared paths
+Click Apply & Restart
 25. Goal: Stream music from anywhere

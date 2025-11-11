@@ -17,14 +17,23 @@ spec:
     image:
       repository: deluan/navidrome
       tag: "0.58.5"
+    
     service:
-      type: NodePort
-      port: 4533
-      targetPort: 4533
-      nodePort: 30533
+      main:
+        type: NodePort
+        ports:
+          http:
+            port: 4533
+            targetPort: 4533
+            nodePort: 30533
+    
     persistence:
-      enabled: true
-      size: 100Gi
-      mountPath: /music
-      hostPath:
-        path: "C:\\Users\\ahorn\\Music"
+      music:
+        enabled: true
+        type: hostPath
+        hostPath: "C:\\Users\\ahorn\\Music"
+        mountPath: /music
+    
+    env:
+      ND_LOGLEVEL: "info"
+      ND_MUSICFOLDER: "/music"
